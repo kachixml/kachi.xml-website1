@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url(./images/3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-blend-mode: darken;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header{
+    background-color: green;
+    color: greenyellow;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+  
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+  }
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 2.5s;
+  }
+
+  .navbar ul li a:hover{
+    box-shadow: 0 3px 50px greenyellow, 0 3px 50px greenyellow, 0 3px 50px greenyellow, 0 3px 50px greenyellow;
+  }
+
+  .navbar .service{
+    padding: 8px;
+    background-color: greenyellow;
+  }
+
+  .content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 0.9%;
+  }
+
+  
+.content h1{
+    font-size: 50px;
+  }
+  
+  .content p{
+    text-align: left;
+    margin-top: 7px;
+  }
+  
+  /* styles.css */
+
+/* Initial opacity of 0 to hide the content */
+.content {
+    opacity: 0;
+}
+
+/* styles.css */
+
+/* Initial position - start off the screen */
+.content {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+/* Keyframes to slide in from bottom and slide out */
+@keyframes slideInAndOut {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+/* Apply the animation to the content div */
+.content {
+    animation: slideInAndOut 8s ease-in-out infinite;
+    /* Infinite loop for the animation */
+    animation-delay: 2s;
+    /* Delay of 2 seconds before the animation starts */
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 0rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8rem;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: green;
+    color: greenyellow;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+}
+
+.contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: green;
+    color: greenyellow;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+}
+
+.services-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service {
+    margin-bottom: 2rem;
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
